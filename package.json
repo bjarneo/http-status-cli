@@ -1,6 +1,6 @@
 {
   "name": "http-status-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "HTTP Status code message CLI lookup",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "bin": {
     "http-status": "./bin/http-status-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjarneo/http-status-cli.git"
   },
   "keywords": [
     "http",
