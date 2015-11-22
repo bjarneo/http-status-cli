@@ -6,4 +6,4 @@ var path = require('path'),
     fs = require('fs'),
     filePath = path.join(path.dirname(fs.realpathSync(__filename)), '../');
 
-require(filePath + 'index.js');
+require(filePath + 'cli.js');
