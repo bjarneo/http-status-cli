@@ -4,9 +4,9 @@ var statusCodes = require('./status-codes');
 
 module.exports = function httpStatus(code) {
     var msg = statusCodes[code];
-    if (msg) {
-        return msg;
+    if (!msg) {
+        throw new Error('HTTP status code not found');
     } else {
-        throw 'HTTP status code not found';
+        return msg;
     }
 };
