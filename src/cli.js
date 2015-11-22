@@ -8,7 +8,7 @@ if (!process.argv[2]) {
 
 var code = message[process.argv[2]];
 if (code) {
-    console.log('%s - %s \n%s', process.argv[2], code.message, code.description);
+    console.log('%d - %s \n\r%s', process.argv[2], code.message, code.description);
 } else {
     console.log('HTTP status code not found');
 }
