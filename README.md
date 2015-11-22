@@ -46,6 +46,10 @@ The RFC specifies this code should be returned by tea pots requested to brew cof
 status is used as an easter egg in some websites, including Google.com.
 ```
 
+Contribution
+------
+Contributions are appreciated.
+
 License
 ------
 MIT-licensed. See LICENSE.
