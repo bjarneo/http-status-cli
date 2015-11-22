@@ -4,8 +4,10 @@
   "description": "HTTP Status code message CLI lookup",
   "main": "src/index.js",
   "scripts": {
+    "posttest": "npm run lint",
+    "prepublish": "npm prune && npm test",
     "lint": "node node_modules/.bin/eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/.bin/mocha test/"
   },
   "bin": {
     "http-status": "./bin/http-status-cli"
@@ -22,8 +24,8 @@
   ],
   "author": "Bjarne Oeverli",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "mocha": "^2.3.4",
     "eslint-config-vgno": "^5.0.0",
     "eslint": "^1.8.0"
   }
