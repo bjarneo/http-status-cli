@@ -12,7 +12,7 @@ describe('http status', function() {
         );
     });
 
-    it('should return an exception if the code is invalid', function() {
+    it('should throw an exception if the code is invalid', function() {
         assert.throws(function() { httpStatus(1337) }, Error, 'HTTP status code not found');
     });
 });
