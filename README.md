@@ -56,6 +56,11 @@ Tests
 npm test
 ```
 
+Sources
+------
+[https://www.addedbytes.com/articles/for-beginners/http-status-codes/](https://www.addedbytes.com/articles/for-beginners/http-status-codes/)
+[https://en.wikipedia.org/wiki/List_of_HTTP_status_codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+
 Contribution
 ------
 Contributions are appreciated.
