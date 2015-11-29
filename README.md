@@ -3,7 +3,7 @@ http-status-cli
 
 Why
 ------
-I always forget what some status codes is and what they do—therefore I find this tool handy to do a quick lookup.
+I always forget what some status codes are and what they do—therefore I find this tool handy to do a quick lookup.
 
 Installation
 ------
