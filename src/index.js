@@ -2,11 +2,12 @@
 
 var statusCodes = require('./status-codes');
 
-module.exports = function httpStatus(code) {
-    var msg = statusCodes[code];
-    if (!msg) {
-        throw new Error('HTTP status code not found');
+module.exports = function httpStatus(code, callback) {
+    var statusCode = statusCodes[code];
+
+    if (!statusCode) {
+        callback('HTTP status code not found');
     } else {
-        return msg;
+        callback(null, statusCode.message, statusCode.description);
     }
 };

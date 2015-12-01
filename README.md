@@ -40,7 +40,13 @@ or
 ```
 var httpStatus = require('http-status-cli');
 
-console.log(httpStatus(418).message, httpStatus(418).description);
+httpStatus(418, function(err, msg, desc) {
+    if (err) {
+        console.log(err);
+    }
+
+    console.log(msg, desc);
+});
 
 // Output:
 I'm a teapot

@@ -1,15 +1,16 @@
 'use strict';
 
-var statusCodes = require('./status-codes');
+var httpStatus = require('./index');
 
 if (!process.argv[2]) {
     return false;
 }
 
-var code = statusCodes[process.argv[2]];
-if (code) {
-    console.log('%d - %s', process.argv[2], code.message);
-    console.log(code.description);
-} else {
-    console.log('HTTP status code not found');
-}
+httpStatus(process.argv[2], function(err, msg, desc) {
+    if (err) {
+        console.log(err);
+    }
+
+    console.log('%d - %s', process.argv[2], msg);
+    console.log(desc);
+});
