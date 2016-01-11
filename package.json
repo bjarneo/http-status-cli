@@ -32,5 +32,8 @@
     "mocha": "^2.3.4",
     "eslint-config-vgno": "^5.0.0",
     "eslint": "^1.8.0"
+  },
+  "dependencies": {
+    "colors": "^1.1.2"
   }
 }
