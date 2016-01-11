@@ -22,12 +22,12 @@ httpStatus(process.argv[2], function(err, msg, desc) {
 });
 
 function printCode(code, msg, desc) {
-    if(code < 400) {
-        code = code.green
-    }else if(code < 500) {
-        code = code.yellow
-    }else {
-        code = code.red
+    if (code < 400) {
+        code = code.green;
+    } else if (code < 500) {
+        code = code.yellow;
+    } else {
+        code = code.red;
     }
     console.log('%s - %s', code, msg.gray);
     console.log('  %s', desc);
