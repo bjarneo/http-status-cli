@@ -1,6 +1,6 @@
 {
   "name": "http-status-cli",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "HTTP Status code message CLI lookup",
   "main": "src/index.js",
   "scripts": {
