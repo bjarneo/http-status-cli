@@ -24,7 +24,7 @@ Features
 
 Usage
 ------
-[http-status-418](http://i.imgur.com/wNvqpBV.jpg)
+![http-status-418](http://i.imgur.com/wNvqpBV.jpg)
 
 or
 
