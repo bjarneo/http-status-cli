@@ -24,20 +24,11 @@ Features
 
 Usage
 ------
-```
-http-status 418
-
-// Output:
-418 - I'm a teapot
-This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, 
-Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. 
-The RFC specifies this code should be returned by tea pots requested to brew coffee. This HTTP 
-status is used as an easter egg in some websites, including Google.com.
-```
+[http-status-418](http://i.imgur.com/wNvqpBV.jpg)
 
 or
 
-```
+```js
 var httpStatus = require('http-status-cli');
 
 httpStatus(418, function(err, msg, desc) {

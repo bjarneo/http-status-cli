@@ -9,12 +9,14 @@ if (!process.argv[2]) {
     Object.keys(codes).forEach(function(code) {
         printCode(code, codes[code].message, codes[code].description);
     });
+
     return;
 }
 
 httpStatus(process.argv[2], function(err, msg, desc) {
     if (err) {
         console.log(err.red);
+
         return;
     }
 
@@ -29,6 +31,7 @@ function printCode(code, msg, desc) {
     } else {
         code = code.red;
     }
+
     console.log('%s - %s', code, msg.gray);
     console.log('  %s', desc);
 }
