@@ -30,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^2.3.4",
-    "eslint-config-vgno": "^5.0.0",
+    "eslint-config-vgno": "7.0.0",
     "eslint": "^1.8.0"
   },
   "dependencies": {
