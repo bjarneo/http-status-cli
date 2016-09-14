@@ -1,9 +1,9 @@
 'use strict';
 
-var statusCodes = require('./status-codes');
+const statusCodes = require('./status-codes');
 
 module.exports = function httpStatus(code, callback) {
-    var statusCode = statusCodes[code];
+    const statusCode = statusCodes[code];
 
     if (!statusCode) {
         callback('HTTP status code not found');

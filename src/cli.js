@@ -1,27 +1,16 @@
 'use strict';
 
 require('colors');
-var httpStatus = require('./index');
-var codes = require('./status-codes');
+const httpStatus = require('./index');
+const codes = require('./status-codes');
 
 // Print all status codes if none are provided
 if (!process.argv[2]) {
-    Object.keys(codes).forEach(function(code) {
-        printCode(code, codes[code].message, codes[code].description);
-    });
+    Object.keys(codes).forEach(code =>
+        printCode(code, codes[code].message, codes[code].description));
 
-    return;
+    process.exit(0);
 }
-
-httpStatus(process.argv[2], function(err, msg, desc) {
-    if (err) {
-        console.log(err.red);
-
-        return;
-    }
-
-    printCode(process.argv[2], msg, desc);
-});
 
 function printCode(code, msg, desc) {
     if (code < 400) {
@@ -35,3 +24,13 @@ function printCode(code, msg, desc) {
     console.log('%s - %s', code, msg.gray);
     console.log('  %s', desc);
 }
+
+httpStatus(process.argv[2], (err, msg, desc) => {
+    if (err) {
+        console.log(err.red);
+
+        process.exit(1);
+    }
+
+    printCode(process.argv[2], msg, desc);
+});
