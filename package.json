@@ -12,6 +12,9 @@
   "bin": {
     "http-status": "./bin/http-status-cli"
   },
+  "engines" : {
+    "node" : ">=4.0.0"
+},
   "repository": {
     "type": "git",
     "url": "https://github.com/bjarneo/http-status-cli.git"
